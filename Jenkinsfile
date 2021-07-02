@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Hello World'
+                javac hw.java
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                java HelloWorld
             }
         }
         stage('Deploy') {
